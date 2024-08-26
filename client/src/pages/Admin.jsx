@@ -150,9 +150,9 @@ function Admin() {
     }
   };
 
-  const handleReplyClick = (id, email, uuid, subject) => {
-    console.log("Replying to message:", { id, email, uuid, subject });
-    setReplyVisible(id);
+  const handleReplyClick = (uuid, email, subject) => {
+    console.log("Replying to message:", { email, uuid, subject });
+    setReplyVisible(uuid);
     setReply({ to: email, subject: "", text: "", uuid });
     setReplyPlaceholder(`Re: ${subject}`);
   };
@@ -181,7 +181,7 @@ function Admin() {
           <p>No messages found.</p>
         ) : (
           messages.map((message) => (
-            <div key={message.id} className="message-row">
+            <div key={message.uuid} className="message-row">
               <p>
                 <strong>From:</strong> {message.first_name} {message.last_name}
               </p>
@@ -201,14 +201,13 @@ function Admin() {
               <p>
                 <strong>Replied:</strong> {message.replied ? "Yes" : "No"}
               </p>
-              {replyVisible !== message.id && (
+              {replyVisible !== message.uuid && (
                 <>
                   <button
                     onClick={() =>
                       handleReplyClick(
-                        message.id,
-                        message.email,
                         message.uuid,
+                        message.email,
                         message.subject
                       )
                     }
@@ -234,10 +233,10 @@ function Admin() {
               )}
               <div
                 className={`reply-form ${
-                  replyVisible === message.id ? "visible" : ""
+                  replyVisible === message.uuid ? "visible" : ""
                 }`}
               >
-                {replyVisible === message.id && (
+                {replyVisible === message.uuid && (
                   <form onSubmit={handleReplySubmit} data-uuid={message.uuid}>
                     <input
                       type="text"

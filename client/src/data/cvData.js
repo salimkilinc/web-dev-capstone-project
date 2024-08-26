@@ -1,19 +1,24 @@
-export const aboutText = `I completed my studies at Dokuz Eylül University, specializing in Public Administration, in 2018.
-Following a series of short-term sales roles, I experienced a period of unemployment due to my involvement 
-in the airline second pilot nomination process and some health issues. Presently residing in Mersin, Turkey, 
-I am employed as a remote Live Support Representative for an IT company based in Zagreb. In pursuit of a career change, 
-I enrolled in the Data Science Bootcamp at Istanbul Data Science Academy in June 2023, successfully completing the program 
-in January 2024. After completing my Data Science training in January this year, I tried to further develop myself in the same 
-field. Finally, in March, I requested my company to start me in a data-related position. Unfortunately, my request was denied 
-on the grounds that I did not have enough experience for such a position and that just having training would not be sufficient. 
-However, they must have noticed my efforts to improve myself and my eagerness to continuously learn, as they made me another 
-offer. They promised to start me as a Junior Web Developer if I successfully completed the training they planned for me. 
-Working in a data-related position was not a promise I made to myself. Starting in any position that required coding skills 
-would be a significant step for my career. Therefore, I couldn’t refuse this offer, which made me the happiest among the offers 
-I’ve received in my life. To become a Junior Web Developer, I started the famous Angela Yu’s “The Complete 2024 Web Development 
-Bootcamp” from The App Brewery and it is still ongoing.`;
+export const aboutText = `I completed my studies at Dokuz Eylül University, specializing in Public Administration, in 2018. Following a series 
+of short-term sales roles, I experienced a period of unemployment due to my involvement in the airline second pilot nomination process and some 
+health issues. Presently residing in Mersin, Turkey, I am employed as a remote Junior Web Developer for an IT company based in Zagreb. Before 
+starting to work as a Junior Web Developer, I was a remote Live Support Representative at the same company for the previous 2 and a half years. 
+In pursuit of a career change, I enrolled in the Data Science Bootcamp at Istanbul Data Science Academy in June 2023, successfully completing 
+the program in January 2024. After completing my Data Science training in January this year, I tried to further develop myself in the same field.
+ Finally, in March, I requested my company to start me in a data-related position. Unfortunately, my request was denied on the grounds that I did
+  not have enough experience for such a position and that just having training would not be sufficient. However, they must have noticed my 
+  efforts to improve myself and my eagerness to continuously learn, as they made me another offer. They promised to start me as a Junior Web 
+  Developer if I successfully completed the training they planned for me. Working in a data-related position was not a promise I made to myself.
+   Starting in any position that required coding skills would be a significant step for my career. Therefore, I couldn’t refuse this offer, 
+   which made me the happiest among the offers I’ve received in my life. I completed the famous Angela Yu’s “The Complete 2024 Web Development 
+   Bootcamp” from The App Brewery in August 2024 and I started to work as a Junior Web Developer in September 2024 at the same company.`;
 
 export const certificates = [
+  {
+    name: "FULL-STACK WEB DEVELOPER",
+    date: "08/2024",
+    org: "The App Brewery",
+    cred: "https://www.datacamp.com/statement-of-accomplishment/track/c1534329247239d7edb6a3750232e21760cd5093?raw=1",
+  },
   {
     name: "PYTHON DEVELOPER",
     date: "02/2024",
@@ -37,8 +42,8 @@ export const certificates = [
 export const skills = {
   firstSkillsetName: "Web",
   firstSkillset:
-    "JavaScript, jQuery, Bootstrap, HTML, CSS, Flexbox, Grid, Github, Git, PostgreSQL, SQL",
-  secondSkillsetName: "DATA",
+    "JavaScript, jQuery, Bootstrap, HTML, CSS, Flexbox, Grid, Github, Git, PostgreSQL, SQL, Node.js, Express.js, EJS, APIs, Authentication, React.js",
+  secondSkillsetName: "Data",
   secondSkillset:
     "Github, Git, Data Visualization, Data Modeling, Recommender Systems, Natural Language Processing, Topic Modeling, Data Preprocessing, Data Analysis, Streamlit, Selenium, Data Classification, PostgreSQL, SQL, BeautifulSoup, Scikit-Learn, Web Scraping, Machine Learning, Jupyter Notebook, Python, Numpy, Pandas, Matplotlib, Seaborn",
 };
@@ -64,10 +69,17 @@ export const references = [
 
 export const education = [
   {
+    name: "Full Stack Web Development Bootcamp",
+    date: "03/2024 - 08/2024",
+    org: "THE APP BREWERY",
+    city: "Remote",
+    exp: "Please check out my projects on the Projects page.",
+  },
+  {
     name: "Data Science Bootcamp",
     date: "06/2023 - 01/2024",
     org: "ISTANBUL DATA SCIENCE ACADEMY",
-    city: "Istanbul, Turkey",
+    city: "Remote",
     exp: "Please check out my projects on the Projects page.",
   },
   {
@@ -89,14 +101,14 @@ export const education = [
 export const experience = [
   {
     name: "WEB DEVELOPER",
-    date: "08/2024 - Present",
+    date: "09/2024 - Present",
     org: "Enter Solutions",
-    city: "Zagreb, Croatia (Remote)",
+    city: "Zagreb, Croatia (Hybrid)",
   },
   {
     name: "LIVE SUPPORT AGENT",
     date: "02/2022 - 08/2024",
     org: "Enter Solutions",
-    city: "Zagreb, Croatia (Remote)",
+    city: "Zagreb, Croatia (Hybrid)",
   },
 ];
