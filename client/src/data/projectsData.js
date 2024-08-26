@@ -67,7 +67,7 @@ export const web = [
     description:
       "I developed this website all by myself using my front-end and back-end skills that I learned on the App Brewery's Web Development Bootcamp.",
     imagePath: developer,
-    link: "https://medium.com/@salimkilinc/front-end-triplets-1b8b65902e80",
+    link: "https://medium.com/@salimkilinc/web-development-capstone-project-salimkilinc-com-11e1baf50191",
   },
   {
     title: "Using a Database for Persistence of Book Notes",
