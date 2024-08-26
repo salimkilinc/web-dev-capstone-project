@@ -1,0 +1,98 @@
+.contact-box {
+  height: 80%;
+  width: 60%;
+  background-color: #caf4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0.2vh;
+  border-radius: 24px;
+  border-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-info input {
+  width: 13vw;
+}
+
+.first-name > input,
+.last-name > input {
+  margin-right: 0;
+}
+
+.last-name > input,
+.email > input {
+  margin-left: 0;
+}
+
+.last-name > label,
+.email > label {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.send {
+  margin-left: 3vw;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sent-message {
+  margin-left: 0.5vw;
+  color: dimgray;
+  font-family: "Poppins SemiBold", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .contact-box {
+    flex-direction: column;
+    width: 95vw;
+    height: fit-content;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .first-name > input,
+  .last-name > input {
+    margin-right: 2vw;
+  }
+
+  .last-name > input,
+  .email > input {
+    margin-left: 2vw;
+  }
+
+  .personal-info {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .personal-info input {
+    width: initial;
+  }
+
+  .send {
+    align-items: center;
+  }
+
+  label {
+    margin-left: 6vw !important;
+    margin-right: 6vw !important;
+  }
+}

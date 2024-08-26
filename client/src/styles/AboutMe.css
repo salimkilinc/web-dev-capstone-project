@@ -1,0 +1,162 @@
+.intro-box {
+  height: 80%;
+  width: 60%;
+  background-color: transparent;
+  display: flex;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.2vh;
+}
+
+.intro-box,
+.intro-left,
+.intro-left-top {
+  border-top-left-radius: 24px;
+}
+
+.intro-box,
+.intro-left,
+.intro-left-bottom {
+  border-bottom-left-radius: 24px;
+}
+
+.intro-box,
+.intro-right,
+.intro-right-top {
+  border-top-right-radius: 24px;
+}
+
+.intro-box,
+.intro-right,
+.intro-right-bottom {
+  border-bottom-right-radius: 24px;
+}
+
+.intro-left {
+  width: 40%;
+  background-color: transparent;
+}
+
+.intro-left-top {
+  height: 90%;
+  background-color: #5ab2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-picture {
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+}
+
+.intro-hr {
+  height: 0.05vh;
+  width: 15%;
+  border-color: blue;
+  background-color: blue;
+}
+
+.intro-left-bottom {
+  height: 10%;
+  background-color: #a0deff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-right {
+  width: 60%;
+  background-color: transparent;
+}
+
+.intro-right-top {
+  height: 90%;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  text-align: justify;
+  background-color: #caf4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.intro-hello {
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 15vh;
+}
+
+.intro-short-exp {
+  font-size: 3vh;
+  font-weight: bolder;
+}
+
+.intro-button-div {
+  display: flex;
+  gap: 2vh;
+}
+
+.intro-right-bottom {
+  height: 10%;
+  background-color: #caf4ff;
+}
+
+@media (max-width: 800px) {
+  .intro-box {
+    flex-direction: column;
+    width: 95vw;
+    height: fit-content;
+  }
+
+  .intro-left,
+  .intro-right {
+    width: auto;
+    height: fit-content;
+  }
+
+  .intro-left-bottom,
+  .intro-right-bottom {
+    display: none;
+  }
+
+  .intro-left-top,
+  .intro-right-top {
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 3vw;
+    gap: 1vh;
+  }
+
+  .intro-left,
+  .intro-left-top {
+    border-top-right-radius: 24px;
+  }
+
+  .profile-picture {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .intro-right,
+  .intro-right-top {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 0px;
+  }
+
+  .intro-hello {
+    font-size: 10vh;
+  }
+
+  .intro-short-exp {
+    font-size: 2.5vh;
+  }
+
+  .intro-long-exp {
+    font-size: 2vh;
+  }
+}

@@ -1,0 +1,61 @@
+.footer-contact {
+  display: flex;
+  gap: 3vw;
+}
+
+.call,
+.write,
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.call > p,
+.write > p,
+.follow > p {
+  font-weight: bolder;
+}
+
+.call > a,
+.write > a {
+  font-size: smaller;
+}
+
+.social {
+  display: flex;
+  gap: 1vw;
+}
+
+.external-link {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.external-link:hover {
+  color: dimgray;
+}
+
+.salim-icon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .footer-contact {
+    flex-direction: column;
+  }
+
+  .salim-icon {
+    display: block;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+}

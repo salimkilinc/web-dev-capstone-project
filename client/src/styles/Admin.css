@@ -1,0 +1,153 @@
+/* Admin Main */
+.admin-box {
+  height: 80%;
+  width: 60%;
+  background-color: #caf4ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.2vh;
+  border-radius: 24px;
+  border-color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: #5ab2ff white;
+}
+
+.admin-title {
+  color: black;
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 4vh;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.message-row {
+  width: 90%;
+  border: 0.2vh solid white;
+  border-radius: 24px;
+  background-color: #5ab2ff;
+  padding: 2vh;
+  margin: 2vh auto;
+}
+
+.message-row p {
+  margin: 1vh 1vw;
+  border-style: dashed;
+  border-width: 0.2vh;
+  border-color: white;
+  padding: 0.5vw;
+}
+
+.reply-form {
+  align-items: center;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.reply-form.visible {
+  max-height: 500px;
+  padding: 1vw;
+}
+
+.reply-form input,
+.reply-form textarea {
+  margin: 0;
+  width: 96%;
+}
+
+.reply-form .send {
+  margin: 1vw;
+  width: 95%;
+}
+
+.send-btn {
+  border-color: white;
+  margin-right: 1vw;
+}
+
+.reply-btn {
+  border-color: white;
+  margin-left: 1vw;
+}
+
+.mark-read-btn {
+  border-color: white;
+  margin-left: 1vw;
+}
+
+.mark-read-btn.read {
+  background-color: white;
+  color: dimgray;
+  cursor: not-allowed;
+  border: 1px solid dimgray;
+}
+
+.mark-read-btn:not(.read) {
+  background-color: #5ab2ff;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #5ab2ff;
+}
+
+.mark-read-btn:hover:not(.read) {
+  background-color: #3a92e5;
+  border-color: #3a92e5;
+}
+
+.reply-status {
+  margin-left: 0.5vw;
+  color: dimgray;
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: smaller;
+}
+
+.reply-status.error {
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .admin-box {
+    width: 95vw;
+    height: fit-content;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .admin-title {
+    padding-top: 5vh;
+    padding-bottom: 2.5vh;
+  }
+}
+
+/* Admin Login Main */
+.admin-login-box {
+  height: fit-content;
+  width: fit-content;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 0.2vh solid white;
+  border-radius: 24px;
+}
+
+.admin-login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+@media (max-width: 800px) {
+  .loginInput {
+    width: 50vw;
+  }
+}
