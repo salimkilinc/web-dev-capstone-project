@@ -17,7 +17,7 @@ export const certificates = [
     name: "FULL-STACK WEB DEVELOPER",
     date: "08/2024",
     org: "The App Brewery",
-    cred: "https://www.datacamp.com/statement-of-accomplishment/track/c1534329247239d7edb6a3750232e21760cd5093?raw=1",
+    cred: "https://www.udemy.com/certificate/UC-4e8c687f-72d1-418d-95d2-c228bc038385/",
   },
   {
     name: "PYTHON DEVELOPER",
